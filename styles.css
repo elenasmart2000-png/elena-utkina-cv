@@ -11,4 +11,19 @@ main{padding:0 54px}section{padding:40px 0;border-bottom:1px solid var(--line)}s
 @media(max-width:600px){.page{width:calc(100% - 20px);margin:12px auto 20px;border-radius:18px}.nav-inner{padding:0 20px}.hero{padding:30px 22px}.hero .eyebrow{font-size:9px;letter-spacing:.11em}.hero h1{font-size:40px;max-width:320px}.position{font-size:22px}.specialties{font-size:14px;margin-bottom:20px}.language{font-size:12px}.contact-links{flex-direction:column;gap:2px}.contact-links a{padding:9px 0;min-height:42px}.hero-actions{gap:10px;margin-top:20px}.hero-actions .button{flex:1;padding:10px 12px;font-size:13px;gap:8px}.button svg{width:17px;height:17px}main{padding:0 22px}section{padding:30px 0}.section-heading{margin-bottom:20px}h2{font-size:26px;line-height:1.2}.eyebrow{font-size:10px}.profile-copy .lead{font-size:17px}.profile-copy p{font-size:15px}.achievement-grid,.competency-grid,.education-grid{grid-template-columns:1fr}.achievement{padding:19px}.achievement h3{font-size:27px;margin-bottom:9px}.achievement-note{font-size:13px;padding:13px 15px}.competency{padding:20px}.competency h3{font-size:18px}.experience-card{border-radius:15px}.experience-card summary{padding:20px;gap:10px}.experience-role{font-size:10px}.company-name{font-size:23px}.company-description{font-size:13px}.disclosure{flex-basis:30px;height:30px;width:30px}.experience-body{margin:0 20px;padding:20px 0}.experience-columns.single ul,.technology-content>ul{columns:1}.experience-group ul,.responsibility p{font-size:14px}.results-group{padding:15px}.tool-tags{gap:8px}.tool-tags span{padding:6px 11px}.technology-content>p{font-size:15px}.education-grid{gap:25px}.community-heading{margin-top:20px}.contacts-section .button{width:100%}footer{padding:20px 22px;font-size:11px;align-items:center}footer>a{white-space:nowrap}}
 @media(max-width:370px){.hero h1{font-size:36px}.hero-actions{flex-direction:column}.hero-actions .button{width:100%}.company-name{font-size:21px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+/* Prominent navigation and clear expand/collapse controls. */
+.navigation{background:#183b73;border-bottom:3px solid #b28a3a;box-shadow:0 4px 18px #17203326}
+.wordmark,.wordmark:hover{color:#fff}.wordmark-dot{color:#e6c47c}
+.nav-links a{color:#fff;font-weight:700;font-size:14px;padding:11px 12px;min-height:44px}
+.nav-links a:hover{color:#fff;background:#ffffff20}
+.nav-links a[aria-current="location"]{color:#183b73;background:#fff;box-shadow:inset 0 -3px #d8b56e}
+.navigation a:focus-visible,.navigation button:focus-visible{outline-color:#f2d99e}
+.menu-toggle{background:#fff;color:#183b73;border-color:#fff;font-weight:700}
+main section:focus{outline:none}
+.disclosure{background:#e9eef5;border:1px solid #cbd6e4;color:#183b73}
+.disclosure svg{display:none}
+.disclosure::before{content:"+";font-family:Arial,sans-serif;font-size:27px;font-weight:400;line-height:1}
+.experience-card[open] .disclosure::before{content:"−"}
+@media(min-width:901px) and (max-width:1050px){.nav-links a{font-size:13px;padding:10px 9px}}
+@media(max-width:900px){.nav-links a{padding:11px 12px}.navigation .nav-inner{min-height:64px}}
 @media print{.navigation,.hero-actions,.skip-link,footer,.contacts-section .button{display:none!important}body{background:#fff}.page{width:100%;margin:0;border:0;border-radius:0;box-shadow:none}.hero{padding:20px;background:#fff}main{padding:0 20px}section{padding:20px 0}h2{break-after:avoid}.experience-card,.achievement,.competency{break-inside:avoid}.disclosure{display:none}}
